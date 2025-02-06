@@ -1,0 +1,40 @@
+header {
+  background-color: rgba(8, 7, 7, 0.904);
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center;
+  height: 60px;
+  width: 100vw;
+  box-shadow: 0 1px rgb(27, 27, 27);
+}
+
+header ul {
+  gap: 10px;
+  list-style-type: none;
+  display: flex;
+}
+
+header a {
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+header a:hover {
+  color: rgb(235, 163, 30);
+  cursor: pointer;
+}
+
+header nav {
+  margin-right: 30px;
+  font-size: 1.5rem; 
+  color: rgb(235, 163, 30);
+}
+
+* {
+  color: rgb(240, 240, 240);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+}
