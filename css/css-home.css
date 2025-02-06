@@ -14,6 +14,7 @@ header ul {
   gap: 10px;
   list-style-type: none;
   display: flex;
+  margin-left: 580px;
 }
 
 header a {
@@ -70,6 +71,11 @@ h2 {
   border-left: 4px solid rgb(6, 52, 234);
 }
 
+p {
+  font-size: 0.8rem;
+  margin-top: -35px;
+}
+
 .card {
   border: 2px solid rgba(6, 52, 234);
   border-radius: 5px;
@@ -78,7 +84,7 @@ h2 {
   margin-left: 10px;
   display: flex;
   width: 95vw;
-  height: 220px;
+  height: 260px;
   overflow-x: scroll;
   overflow-y: hidden;
   &::-webkit-scrollbar {
@@ -86,21 +92,47 @@ h2 {
   }
 }
 
-.card-body {
+.card_body {
   margin-right: 10px;
-  text-align: center;
+  /* text-align: center; */
   padding: 8px;
   background-color: rgba(0, 0, 0, 0.904);
   display: inline-block;
   border-radius: 8px;
   height: 200px;
-  width: 134px;
+  width: 150px;
+}
+
+.card_Films {
+  border: 2px solid rgba(6, 52, 234);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: flex;
+  width: 95vw;
+  height: 510px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card_Films_body {
+  margin-right: 10px;
+  /* text-align: center; */
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.904);
+  display: inline-block;
+  border-radius: 8px;
+  height: 200px;
+  width: 140px;
 }
 
 h6{
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 8px;
-  margin-left: 34px;
 }
 
 h6:hover {
