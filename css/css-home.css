@@ -143,6 +143,37 @@ p {
   transform: scale(1.05);
 }
 
+.card_Series {
+  border: 2px solid rgba(6, 52, 234);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: flex;
+  width: 95vw;
+  height: 510px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card_Series_body {
+  margin-right: 10px;
+  /* text-align: center; */
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.904);
+  display: inline-block;
+  border-radius: 8px;
+  height: 200px;
+  width: 140px;
+}
+
+.card_Series_body:hover {
+  transform: scale(1.05);
+}
+
 h6{
   font-size: 1rem;
   margin-top: 8px;
