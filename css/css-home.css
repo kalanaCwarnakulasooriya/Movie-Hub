@@ -10,6 +10,11 @@ header {
   box-shadow: 0 1px rgb(27, 27, 27);
 }
 
+/* header.hidden {
+  transform: translateY(-60px);
+  transition: transform 0.5s;
+} */
+
 header ul {
   gap: 10px;
   list-style-type: none;
@@ -103,6 +108,10 @@ p {
   width: 150px;
 }
 
+.card_body:hover {
+  transform: scale(1.05);
+}
+
 .card_Films {
   border: 2px solid rgba(6, 52, 234);
   border-radius: 5px;
@@ -128,6 +137,10 @@ p {
   border-radius: 8px;
   height: 200px;
   width: 140px;
+}
+
+.card_Films_body:hover {
+  transform: scale(1.05);
 }
 
 h6{
