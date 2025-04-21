@@ -11,8 +11,7 @@ header {
 }
 
 /* header.hidden {
-  transform: translateY(-60px);
-  transition: transform 0.5s;
+  transform: translate3d(0, -100%, 0);
 } */
 
 header ul {
@@ -38,12 +37,12 @@ header nav {
   font-size: 1.5rem; 
   color: rgb(6, 52, 234);
 }
-
 * {
   color: rgb(240, 240, 240);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
 }
+
 
 body {
   width: 100vw;
@@ -183,6 +182,171 @@ h6:hover {
   color: rgb(6, 52, 234);
 }
 
+footer {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.904);
+}
+footer div {
+  text-align: center;
+  width: 100vw;
+  font-size: 1rem;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+hr {
+  border-color: rgba(6, 52, 234);
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header .burger {
+    margin-right: 30px;
+    display: block;
+  }
+  .menu-panel {
+    display: block;
+  }
+  .menu-panel {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) {
+  .menu-panel {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  header nav {
+    display: none;
+  }
+  header .burger {
+    margin-right: 40px;
+    display: block;
+  }
+  .menu-panel {
+    display: block;
+  }
+}
+.burger {
+  display: none;
+}
+.menu-panel {
+  z-index: 2;
+  overflow: hidden;
+  margin: 0;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: -100vw;
+
+  & li {
+    margin-left: 20px;
+  }
+  transition: right 0.4s ease;
+  & ul {
+    list-style-type: none;
+  }
+  & a {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  & a:hover {
+    color: rgb(6, 52, 234);
+  }
+}
+.menunav {
+  display: block;
+}
+.menu-panel li {
+  margin-top: 30px;
+}
+
+.menu-panel i {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+.menu-panel.active {
+  right: 16px;
+}
+
+.menulist {
+  width: 150px;
+}
+
 .slider {
   display: flex;
+  height: 220px;
+  animation: slider 50s cubic-bezier(0.075, 1, 0.075, 1) 4s infinite;
+}
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-160px);
+  }
+  20% {
+    transform: translateX(-320px);
+  }
+  30% {
+    transform: translateX(-480px);
+  }
+  40% {
+    transform: translateX(-640px);
+  }
+  50% {
+    transform: translateX(-800px);
+  }
+  60% {
+    transform: translateX(-960px);
+  }
+  70% {
+    transform: translateX(-1120px);
+  }
+  80% {
+    transform: translateX(-1280px);
+  }
+  90% {
+    transform: translateX(-1440px);
+  }
+  100% {
+    transform: translateX(-1600px);
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .card {
+    width: 82vw;
+  }
+  #btn-close {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .card {
+    width: 86vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 88vw;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .card {
+    width: 93vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .card {
+    width: 95vw;
+  }
 }

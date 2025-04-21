@@ -2,7 +2,7 @@ body {
   width: 100vw;
   margin: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -140,4 +140,56 @@ hr {
 #cast_3{
   border-right: 1px solid rgb(6, 52, 234);
   padding-right: 10px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding-top: 0;
+  padding-left: 8px;
+  text-align: center;
+  color: rgb(6, 52, 234);
+}
+
+.story-text {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.frame-img {
+  margin: 0;
+  padding: 0;
+  width: 98vw;
+  padding: 0px 10px;
+  justify-content: space-evenly;
+  display: flex;
+  & img {
+    width: 30vw;
+    height: 40vh;
+  }
+}
+
+h4 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: rgb(6, 52, 234);
+}
+
+.story ul {
+  list-style-type: none;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.904);
+}
+footer div {
+  text-align: center;
+  padding: 10px;
 }
